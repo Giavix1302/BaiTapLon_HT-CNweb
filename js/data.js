@@ -7,6 +7,7 @@ const data = [
                 "Thành dày gấp đôi sản phẩm nhôm thông thường, chống phồng đáy"],
         img: "../assets/products/img1_1.png",
         category: "Đồ dùng gia dụng",
+        price: 120000,
         rate: 4,
         quantity: 34,
         isFeature: true
@@ -20,6 +21,7 @@ const data = [
                 "Tay cầm chống bỏng, chắc chắn, an toàn sử dụng"],
         img: "../assets/products/img1_2.png",
         category: "Đồ dùng gia dụng",
+        price: 120000,
         rate: 5,
         quantity: 56,
         isFeature: true
@@ -31,6 +33,7 @@ const data = [
                 "Tay cầm chống bỏng, chắc chắn, an toàn sử dụng"],
         img: "../assets/products/img1_3.png",
         category: "Đồ dùng gia dụng",
+        price: 120000,
         rate: 3,
         quantity: 39,
         isFeature: true
@@ -43,6 +46,7 @@ const data = [
                 "Dễ dàng tạo lớp chống dính tự nhiên, chiên xào thuận tiện"],
         img: "../assets/products/img1_4.png",
         category: "Đồ dùng gia dụng",
+        price: 120000,
         rate: 5,
         quantity: 21,
         isFeature: true
@@ -56,6 +60,7 @@ const data = [
                 "Đa dạng kích thước (20-26cm), phù hợp với các nhu cầu sử dụng tại gia đình"],
         img: "../assets/products/img1_5.png",
         category: "Đồ dùng gia dụng",
+        price: 120000,
         rate: 4,
         quantity: 59,
         isFeature: true
@@ -69,6 +74,7 @@ const data = [
                 "Đa dạng kích thước, đáp ứng mọi nhu cầu nấu nướng"],
         img: "../assets/products/img1_6.png",
         category: "Đồ dùng gia dụng",
+        price: 120000,
         rate: 5,
         quantity: 34,
         isFeature: true
@@ -82,6 +88,7 @@ const data = [
                 "Đa dạng kích thước, đáp ứng mọi nhu cầu nấu nướng"],
         img: "../assets/products/img1_7.png",
         category: "Đồ dùng gia dụng",
+        price: 120000,
         rate: 5,
         quantity: 34,
         isFeature: true
@@ -94,6 +101,7 @@ const data = [
                 "Nhôm đúc nguyên khối  CHỐNG VA ĐẬP TỐT"],
         img: "../assets/products/img1_8.png",
         category: "Đồ dùng gia dụng",
+        price: 120000,
         rate: 3,
         quantity: 85,
         isFeature: true
@@ -106,6 +114,7 @@ const data = [
                 "Chất liệu inox an toàn cho sức khỏe, chống oxy hóa, chống móp méo"],
         img: "../assets/products/img1_9.png",
         category: "Đồ dùng gia dụng",
+        price: 120000,
         rate: 5,
         quantity: 234,
         isFeature: true
@@ -118,6 +127,7 @@ const data = [
                 "Vung kính CƯỜNG LỰC, CHỊU NHIỆT TỐT - Viền inox hạn chế rơi vỡ"],
         img: "../assets/products/img1_10.png",
         category: "Đồ dùng gia dụng",
+        price: 120000,
         rate: 5,
         quantity: 48,
         isFeature: true
@@ -130,6 +140,7 @@ const data = [
                 "Công suất 12000BTU (1.5HP), phù hợp với diện tích phòng 16- 22m2"],
         img: "../assets/products/img2_1.png",
         category: "Điện tử điện lạnh",
+        price: 120000,
         rate: 5,
         quantity: 18,
         isFeature: true
@@ -142,6 +153,7 @@ const data = [
                 "Công nghệ UltraPURE Nano Silver chống tái nhiễm khuẩn"],
         img: "../assets/products/img2_2.png",
         category: "Điện tử điện lạnh",
+        price: 120000,
         rate: 4,
         quantity: 8,
         isFeature: true
@@ -154,6 +166,7 @@ const data = [
                 "Tích hợp nhiều tính năng an toàn (tạo ion âm, hẹn giờ, tự động ngắt…)"],
         img: "../assets/products/img2_3.png",
         category: "Điện tử điện lạnh",
+        price: 120000,
         rate: 5,
         quantity: 14,
         isFeature: true
@@ -167,6 +180,7 @@ const data = [
                 "Cảnh báo thay màng lọc thông minh"],
         img: "../assets/products/img2_4.png",
         category: "Điện tử điện lạnh",
+        price: 120000,
         rate: 4,
         quantity: 12,
         isFeature: true
@@ -180,6 +194,7 @@ const data = [
                 "Mặt trong sơn tĩnh điện, giảm bám tuyết, dễ vệ sinh"],
         img: "../assets/products/img2_5.png",
         category: "Điện tử điện lạnh",
+        price: 120000,
         rate: 5,
         quantity: 13,
         isFeature: true
@@ -192,6 +207,7 @@ const data = [
                 "Chức năng khóa trẻ em an toàn"],
         img: "../assets/products/img2_6.png",
         category: "Điện tử điện lạnh",
+        price: 120000,
         rate: 5,
         quantity: 18,
         isFeature: true
@@ -204,6 +220,7 @@ const data = [
                 "Hệ thống an toàn đồng bộ tích hợp ELCB và rơ le kép chống quá nhiệt. CHỐNG GIẬT - CHỐNG BỎNG"],
         img: "../assets/products/img2_7.png",
         category: "Điện tử điện lạnh",
+        price: 120000,
         rate: 5,
         quantity: 20,
         isFeature: true
@@ -216,6 +233,7 @@ const data = [
                 "Vỏ chất liệu kính cao cấp, không han gỉ, độ bền cao"],
         img: "../assets/products/img3_1.png",
         category: "Thiếp bị nhà bếp",
+        price: 120000,
         rate: 5,
         quantity: 135,
         isFeature: true
@@ -228,6 +246,7 @@ const data = [
                 "9 chương trình rửa linh hoạt, gồm chương trình rửa tiết kiệm ECO"],
         img: "../assets/products/img3_2.png",
         category: "Thiếp bị nhà bếp",
+        price: 120000,
         rate: 4,
         quantity: 15,
         isFeature: true
@@ -240,6 +259,7 @@ const data = [
                 "Chức năng khóa an toàn trẻ em"],
         img: "../assets/products/img3_3.png",
         category: "Thiếp bị nhà bếp",
+        price: 120000,
         rate: 4,
         quantity: 48,
         isFeature: true
@@ -252,6 +272,7 @@ const data = [
                 "Tự động ngắt khi quá tải"],
         img: "../assets/products/img3_4.png",
         category: "Thiếp bị nhà bếp",
+        price: 120000,
         rate: 5,
         quantity: 45,
         isFeature: true
@@ -264,6 +285,7 @@ const data = [
                 "Khoá trẻ em tiện lợi"],
         img: "../assets/products/img3_5.png",
         category: "Thiếp bị nhà bếp",
+        price: 120000,
         rate: 5,
         quantity: 54,
         isFeature: true
@@ -276,6 +298,7 @@ const data = [
                 "Kiềng bếp độc lập, tráng men siêu bền"],
         img: "../assets/products/img3_6.png",
         category: "Thiếp bị nhà bếp",
+        price: 120000,
         rate: 4,
         quantity: 23,
         isFeature: true
@@ -288,6 +311,7 @@ const data = [
                 "Hệ thống đánh lửa magneto bền bỉ"],
         img: "../assets/products/img3_7.png",
         category: "Thiếp bị nhà bếp",
+        price: 120000,
         rate: 5,
         quantity: 14,
         isFeature: true
@@ -300,6 +324,7 @@ const data = [
                 "Kiềng bếp tráng men siêu bền, chịu lực chịu nhiệt tốt"],
         img: "../assets/products/img3_8.png",
         category: "Thiếp bị nhà bếp",
+        price: 120000,
         rate: 5,
         quantity: 78,
         isFeature: true
@@ -312,6 +337,7 @@ const data = [
                 "Mâm nhiệt lớn, cơm chín nhanh, tiết kiệm thời gian"],
         img: "../assets/products/img4_1.png",
         category: "Điện gia dụng",
+        price: 120000,
         rate: 3,
         quantity: 8,
         isFeature: true
@@ -325,6 +351,7 @@ const data = [
                 "Chống dính Whitford (USA) siêu bền, an toàn tuyệt đối"],
         img: "../assets/products/img4_2.png",
         category: "Điện gia dụng",
+        price: 120000,
         rate: 5,
         quantity: 38,
         isFeature: true
@@ -338,6 +365,7 @@ const data = [
                 "Công suất lớn - Nấu chín nhanh, không cần chờ đợi"],
         img: "../assets/products/img4_3.png",
         category: "Điện gia dụng",
+        price: 120000,
         rate: 5,
         quantity: 31,
         isFeature: true
@@ -350,6 +378,7 @@ const data = [
                 "2 chế độ nhiệt tùy chỉnh, đáp ứng mọi nhu cầu"],
         img: "../assets/products/img4_4.png",
         category: "Điện gia dụng",
+        price: 120000,
         rate: 5,
         quantity: 37,
         isFeature: true
@@ -362,6 +391,7 @@ const data = [
                 "Công tắc độc lập dễ dàng điều chỉnh nhiệt độ, tiết kiệm điện năng"],
         img: "../assets/products/img4_5.png",
         category: "Điện gia dụng",
+        price: 120000,
         rate: 4,
         quantity: 32,
         isFeature: true
@@ -374,6 +404,7 @@ const data = [
                 "12 chế độ nấu tiện lợi: Nấu cơm/cháo/soup, hầm xương…"],
         img: "../assets/products/img4_6.png",
         category: "Điện gia dụng",
+        price: 120000,
         rate: 5,
         quantity: 78,
         isFeature: true
@@ -386,6 +417,7 @@ const data = [
                 "Điều khiển cảm ứng kết hợp núm xoay, dễ dàng điều chỉnh nhiệt độ và thời gian"],
         img: "../assets/products/img4_7.png",
         category: "Điện gia dụng",
+        price: 120000,
         rate: 5,
         quantity: 45,
         isFeature: true
@@ -398,6 +430,7 @@ const data = [
                 "Cảnh báo quá nhiệt, khóa trẻ em an toàn tuyệt đối"],
         img: "../assets/products/img4_8.png",
         category: "Điện gia dụng",
+        price: 120000,
         rate: 5,
         quantity: 35,
         isFeature: true
@@ -410,6 +443,7 @@ const data = [
                 "Giá để thực phẩm bằng thép không gỉ, an toàn cho sức khỏe"],
         img: "../assets/products/img4_9.png",
         category: "Điện gia dụng",
+        price: 120000,
         rate: 5,
         quantity: 100,
         isFeature: true
@@ -422,6 +456,7 @@ const data = [
                 "Bộ lưỡi dao inox cao cấp sắc bén, xay nhuyễn mọi loại nguyên liệu"],
         img: "../assets/products/img4_10.png",
         category: "Điện gia dụng",
+        price: 120000,
         rate: 5,
         quantity: 99,
         isFeature: true
@@ -434,6 +469,7 @@ const data = [
                 "Bông lau bằng sợi Microfiber thấm hút nước cực tốt"],
         img: "../assets/products/img5_1.png",
         category: "Đồ dùng nhà bếp",
+        price: 120000,
         rate: 5,
         quantity: 80,
         isFeature: true
@@ -446,6 +482,7 @@ const data = [
                 "Chịu lực tốt, bề mặt trơn nhẵn, hạn chế trầy xước giúp rổ luôn bền đẹp"],
         img: "../assets/products/img5_2.png",
         category: "Đồ dùng nhà bếp",
+        price: 120000,
         rate: 5,
         quantity: 61,
         isFeature: true
@@ -458,6 +495,7 @@ const data = [
                 "Tối ưu không gian và tăng diện tích sử dụng tủ lạnh"],
         img: "../assets/products/img5_3.png",
         category: "Đồ dùng nhà bếp",
+        price: 120000,
         rate: 4,
         quantity: 35,
         isFeature: true
@@ -470,6 +508,7 @@ const data = [
                 "Gắn bánh xe tiện di chuyển, chống nghiêng đổ."],
         img: "../assets/products/img5_4.png",
         category: "Đồ dùng nhà bếp",
+        price: 120000,
         rate: 5,
         quantity: 30,
         isFeature: true
@@ -482,6 +521,7 @@ const data = [
                 "Gắn bánh xe tiện di chuyển, chống nghiêng đổ."],
         img: "../assets/products/img5_5.png",
         category: "Đồ dùng nhà bếp",
+        price: 120000,
         rate: 5,
         quantity: 101,
         isFeature: true
