@@ -1,52 +1,47 @@
-import data from '../data'
+import data from '../data/data.js'
+import { fomatPrice, handleRate } from './utils.js'
 
-const featuredList = getElement('.featured-list');
+// const featuredList = document.querySelector(".feature-list")
+const featuredList = $(".feature-list").get(0)
+
 
 let listFeatured = [];
 
 data.forEach((item) => {
-    const { id, title, price, description: desc, image } = item;
-    const { rate } = item.rating; 
-    if(rate > 4) {
-        const itemFeatured = { id, title, price, desc, image, rate };
+    const { id, name, desc, price, rate, img, isFeature } = item;
+    if(isFeature) {
+        const itemFeatured = { id, name, desc, price, rate, img };
         listFeatured = [ ...listFeatured, itemFeatured];
     }
 })
 
 featuredList.innerHTML = listFeatured.map((item, slideIndex) => {
-    const { id, title, price, desc, image, rate } = item;
+    const { id, name, desc, price, rate, img } = item;
     let position = 'next';
-    if (slideIndex === 0) {
+    if (slideIndex === 1) {
         position = 'active';
     }
     if (slideIndex === listFeatured.length - 1) {
         position = 'last';
     }
-    return `<article class="featured__item ${position}" data-id=${id}>
-        <img src="${image}" alt="" class="featured__item-img">
-        <div class="featuerd__item-info">
-            <div class="featured__item-wrap-heading">
-                <h4 class="featured__item-title">${title}</h4>
-                <div class="featured__item-rate">
-                    <img src="./assets/icon/star.png" alt="" class="featured__item-icon-star">
-                    <span class="featured__item-num-rate">${rate}</span>
-                </div>
-            </div>
-            <p class="featured__item-desc line-clamp">${desc}</p>
-            
-            <div class="featured__item-wrap-footer">
-                <p class="featured__item-price">${price}</p>
-                <button class="featured__item-btn" data-id=${id}>
-                    <a href="../productDetail.html" class="featured__item-link">Detail</a>
-                </button>
-            </div>
+    return `<div class="feature-item ${position}" data-id=${id}>
+        <img src="${img}" alt="" class="feature-item_img">
+        <div class="feature-item_info">
+            <h3 class="feature-item_title">${name}</h3>
+            <ul class="feature-item_list-desc">
+                <li class="feature-item_desc">${desc[0]}</li>
+                <li class="feature-item_desc">${desc[1]}</li>
+            </ul>
+            <span class="feature-item_price">Giá: <span>${fomatPrice(price)}</span></span>
+            <div class="feature-item_rating">${handleRate(rate)}</div>
+            <button class="feature-item_btn">Details</button>
         </div>
-    </article>`
+    </div>`
 }).join('');
 
 const startSlide = () => {
-    const active = getElement('.active');
-    const last = getElement('.last');
+    const active = $('.active').get(0);
+    const last = $('.last').get(0);
     let next = active.nextElementSibling;
     if(!next) next = featuredList.firstElementChild;
     active.classList.remove('active');

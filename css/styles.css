@@ -83,7 +83,7 @@ tbody tr td {
 .h-category_img {
     width: 100%;
     height: 300px;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .h-category_info_name {
@@ -106,7 +106,7 @@ tbody tr td {
     overflow: hidden;
     margin-top: 40px;
     display: flex;
-    gap: 3rem;
+    gap: 30px;
     position: relative;
 }
 
@@ -118,23 +118,23 @@ tbody tr td {
     width: 1000px;
     height: 400px;
     border: 1px solid #e2dfda;
-    border-radius: 1rem;
+    border-radius: 10px;
     overflow: hidden;
-    padding: .8rem 1.2rem;
+    padding: 8px 12px;
     background-color: #fff;
-    /* opacity: 0; */
+    opacity: 0;
     transition: all 0.8s ease-in-out;
     position: absolute;
 }
 
-.featured-item.active {
+.feature-item.active {
     opacity: 1;
     transform: translateX(0);
 }
-.featured-item.next {
+.feature-item.next {
     transform: translateX(100%);
   }
-.featured-item.last {
+.feature-item.last {
     transform: translateX(-100%);
 }
 
