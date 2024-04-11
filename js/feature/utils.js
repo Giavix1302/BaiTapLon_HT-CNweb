@@ -1,4 +1,4 @@
-
+import data from "../data/data.js";
 const fomatPrice = (price) => {
     let formattedPrice = new Intl.NumberFormat('vi-VN', {
         style: 'currency',
@@ -23,7 +23,27 @@ const handleRate = (rate) => {
     return result
 }
 
-export { fomatPrice, handleRate }
+const getStorageItem = (item) => {
+    let storageItem = localStorage.getItem(item)
+    if(storageItem) {
+        storageItem = JSON.parse(localStorage.getItem(item))
+    } else {
+        storageItem = []
+    }
+    return storageItem
+}
+
+const setStorageItem = (name, item) => {
+    localStorage.setItem(name, JSON.stringify(item))
+}
+
+const findProduct = (id) => {
+    let products = data.find((item) => item.id === id) 
+    return products
+}
+
+
+export { fomatPrice, handleRate, getStorageItem, setStorageItem, findProduct }
 
 
             

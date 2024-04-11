@@ -6,6 +6,12 @@ tbody tr td {
     text-align: center;
 }
 
+.filter-empty {
+    width: 100%;
+    text-align: center;
+    margin-top: 100px;
+}
+
 .logo {
     width: 150px;
 }
@@ -437,11 +443,17 @@ tbody tr td {
     list-style: none;
 }
 
-.product-category-item a {
+.product-category-item button {
     color: #333;
     display: block;
     width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: left;
     margin-bottom: 4px;
+    border: none;
+    background-color: transparent;
+
 }
 
 .product-item {
@@ -484,6 +496,7 @@ tbody tr td {
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
+    height: 40px;
 }
 
 .product-item-rating {

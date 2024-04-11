@@ -5,14 +5,12 @@ const categoryListDOM = $(".h-category-list").get(0)
 
 setTimeout(() => {
     const cateItemDOMs = $(".h-category-item")
-    console.log(cateItemDOMs)
     for(let i = 0; i < cateItemDOMs.length; i++) {
         cateItemDOMs.get(i).addEventListener('click', function(e) {
             const cateName = e.target.parentElement.lastElementChild.innerText
             window.location.href = `./products.html?cate=${cateName}`;
         })
     }
-    
 }, 1)
 
 let categoryList = []
