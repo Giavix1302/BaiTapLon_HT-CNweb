@@ -1,4 +1,5 @@
 import '../feature/slide.js'
+import './footer.js'
 import data from '../data/data.js'
 
 const categoryListDOM = $(".h-category-list").get(0)

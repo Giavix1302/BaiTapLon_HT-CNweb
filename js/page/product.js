@@ -1,3 +1,4 @@
+import './footer.js'
 import { getStorageItem, setStorageItem, findProduct, fomatPrice, handleRate, handleDesc } from '../feature/utils.js'
 const productDetailDOM = $('.product-detail').get(0)
 
