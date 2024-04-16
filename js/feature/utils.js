@@ -23,6 +23,12 @@ const handleRate = (rate) => {
     return result
 }
 
+const handleDesc = (desc) => {
+    let descHTML 
+    descHTML = desc.map(item => `<li>${item}</li>`).join('')
+    return descHTML
+}
+
 const getStorageItem = (item) => {
     let storageItem = localStorage.getItem(item)
     if(storageItem) {
@@ -43,7 +49,7 @@ const findProduct = (id) => {
 }
 
 
-export { fomatPrice, handleRate, getStorageItem, setStorageItem, findProduct }
+export { fomatPrice, handleRate, getStorageItem, setStorageItem, findProduct, handleDesc }
 
 
             

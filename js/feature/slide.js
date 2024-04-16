@@ -4,6 +4,15 @@ import { fomatPrice, handleRate } from './utils.js'
 // const featuredList = document.querySelector(".feature-list")
 const featuredList = $(".feature-list").get(0)
 
+setTimeout(() => {
+    const featureItemBtns = $('.feature-item_btn')
+    for(let i = 0; i < featureItemBtns.length; i++) {
+        featureItemBtns.get(i).addEventListener('click', (e) => {
+            const id = e.target.dataset.id;
+            window.location.href = `./product.html?id=${id}`
+        })
+    }
+},1)
 
 let listFeatured = [];
 
@@ -18,10 +27,10 @@ data.forEach((item) => {
 featuredList.innerHTML = listFeatured.map((item, slideIndex) => {
     const { id, name, desc, price, rate, img } = item;
     let position = 'next';
-    if (slideIndex === 1) {
+    if (slideIndex === 0) {
         position = 'active';
     }
-    if (slideIndex === listFeatured.length - 1) {
+    if (slideIndex === listFeatured.length - 1 ) {
         position = 'last';
     }
     return `<div class="feature-item ${position}" data-id=${id}>
@@ -34,7 +43,7 @@ featuredList.innerHTML = listFeatured.map((item, slideIndex) => {
             </ul>
             <span class="feature-item_price">Giá: <span>${fomatPrice(price)}</span></span>
             <div class="feature-item_rating">${handleRate(rate)}</div>
-            <button class="feature-item_btn">Details</button>
+            <button class="feature-item_btn" data-id=${id}>Details</button>
         </div>
     </div>`
 }).join('');

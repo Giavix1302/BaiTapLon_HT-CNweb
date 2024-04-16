@@ -61,6 +61,17 @@
     .cart-responsive-summary {
         display: flex;
     }
+    /* product */
+    .product-detail {
+        flex-direction: column;
+        margin: 30px 0;
+    }
+    .product-detail-img {
+        margin: 0 auto;
+    }
+    .product-detail-btn {
+        
+    }
 }
 
 /* // Small devices (landscape phones, 576px and up) */
@@ -149,6 +160,17 @@
     .order-summary {
         display: none;
     }
+    /* product */
+    .product-detail {
+        flex-direction: column;
+        margin: 30px 0;
+    }
+    .product-detail-img {
+        margin: 0 auto;
+    }
+    .product-detail-btn {
+        width: 100%;
+    }
 }
 
 /* // Extra small devices (portrait phones, less than 576px) */
@@ -236,6 +258,25 @@
     }
     .order-summary {
         display: none;
+    }
+    /* product */
+    .product-detail {
+        flex-direction: column;
+        margin: 20px 0;
+    }
+    .product-detail-img {
+        width: 90vw;
+        height: auto;
+        margin: 0 auto;
+    }
+    .product-detail-btn {
+        width: 100%;
+    }
+    .product-detail-wrap-price-quantity {
+        gap: 10px;
+    }
+    .container {
+        padding: 0;
     }
 }
 

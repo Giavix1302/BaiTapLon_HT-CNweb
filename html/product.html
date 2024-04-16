@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kitchen | home</title>
+    <title>Kitchen | products</title>
     <!-- favicon -->
     <link rel="apple-touch-icon" sizes="57x57" href="../assets/favicon">
     <link rel="apple-touch-icon" sizes="60x60" href="../assets/favicon/apple-icon-60x60.png">
@@ -33,22 +33,22 @@
 </head>
 <body>
     <div class="container-sm"> 
-        <nav class=" px-5 navbar navbar-light justify-content-between fixed-top navbar-expand-lg bg-white bg-white shadow bg-white rounded">
-            <a class="navbar-brand" href="#"><img class="logo" src="../assets/logo/Capture_-Photoroom.png-Photoroom.png" alt=""></a>
+        <nav class="px-5 navbar navbar-light justify-content-between fixed-top navbar-expand-lg bg-white shadow bg-white rounded">
+            <a class="navbar-brand" href="../index.html"><img class="logo" src="../assets/logo/Capture_-Photoroom.png-Photoroom.png" alt=""></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse w-100" id="navbarSupportedContent">
                 <ul class="ml-auto navbar-nav ">
-                  <li class="nav-item px-2 active">
-                    <a class="nav-link" href="#">Home</a>
+                  <li class="nav-item px-2 ">
+                    <a class="nav-link" href="../index.html">Home</a>
                   </li>
-                  <li class="nav-item px-2">
+                  <li class="nav-item px-2 ">
                     <a class="nav-link" href="./products.html">Product</a>
                   </li>
                   <li class="nav-item px-2">
-                    <a class="nav-link" href="./contact.html">Contact</a>
+                    <a class="nav-link" href="contact.html">Contact</a>
                   </li>
                   <li class="nav-item px-2">
                     <a class="nav-link" href="./about.html">About</a>
@@ -58,70 +58,28 @@
                         <i class="fa-solid fa-cart-shopping"></i>
                     </a>
                   </li>
-                  <!-- <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                  </li> -->
-                  
                 </ul>
                 
               </div>
         </nav>
     </div>
-    <div class=".container-fluid ">
-      <div class="background-banner">
-        <div class="hero-container">
-          <img src="../assets/img/banner-hero.jpg" alt="" class="img-hero">
-          <section class="hero-content">
-            <h2 class="hero-heading">#Kitchen</h2>
-            <p class="hero-desc">Mua sắm online tiện lợi - Giá rẻ bất ngờ</p>
-          </section>
+
+    <div class="container-fluid d-flex flex-column align-items-center bg-light pb-5">
+      <div class="container products">
+        <div class="bread-crumb-nav">
+          <h3 class="bcv-title"><a href="../index.html">Home</a></h3>
+          <div class="icon-divided">/</div>
+          <h3 class="bcv-title"><a href="./products.html">Products</a></h3>
         </div>
-      </div>  
-    </div>
-    <div class="container d-flex flex-column align-items-center my-5">
-      <h1 class="h-category-heading">Danh mục sản phẩm</h1>
-      <ul class="container h-category-list d-flex flex-wrap p-2">
-        <!-- <li class="h-category-item col-xl-4 col-lg-4 col-md-6 col-md-6">
-          <div class="wrap_img_h3">
-            <img src="../assets/products/img1_1.png" alt="" class="h-category_img">
-            <h3 class="h-category_info_name">Đồ dùng gia dụng</h3>
+
+        <div class="container">
+          <div class="product-detail">
           </div>
-        </li> -->
-      </ul>
+        </div>
+
+      </div>
     </div>
-    <div class="container-fluid bg-light d-flex flex-column align-items-center py-5">  
-      <h1 class="feature-heading">Sản phẩm nổi bật</h1>
-      <div class="feature-list">
-        <!-- <div class="feature-item next">
-          <img src="../assets/products/img1_4.png" alt="" class="feature-item_img">
-          <div class="feature-item_info">
-            <h3 class="feature-item_title">CHẢO INOX ĐA LỚP</h3>
-            <ul class="feature-item_list-desc">
-              <li class="feature-item_desc">Kết cấu inox liền khối siêu bền bỉ, chống phòng đáy</li>
-              <li class="feature-item_desc">Kết cấu inox liền khối siêu bền bỉ, chống phòng đáy</li>
-            </ul>
-            <span class="feature-item_price">Giá: <span>120.000 VND</span></span>
-            <div class="feature-item_rating">
-              <svg width="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="#FFD43B" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
-              <svg width="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="#FFD43B" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
-              <svg width="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="#FFD43B" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
-              <svg width="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="#FFD43B" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
-              <svg width="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="#a6a6a6" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
-            </div>
-            <button class="feature-item_btn">Details</button>
-            </div>
-        </div> -->
-        
-      </div>     
-    </div>
+    
     <!-- footer -->
     <div class=".container-fluid">
       <div  class="container footer py-5 d-flex justify-content-between flex-wrap">
@@ -167,6 +125,7 @@
       </div>
       <p class="copyright">Copyright © 2017 kitchen.com.vn</p>
     </div>
-    <script type="module" src="../js/page/index.js"></script>
+
+    <script type="module" src="../js/page/product.js"></script>
 </body>
 </html>
