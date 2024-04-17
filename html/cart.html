@@ -85,10 +85,20 @@
                                         <h5 class="info-user-header">Thông tin người dùng</h5>
                                         <div class="list-info-user">
                                             <div class="wrap-info-user">
+                                                <lable class="wrap-info-label">Họ và tên:</lable>
+                                                <input
+                                                    id="hoVaTen"
+                                                    value=""
+                                                    disabled
+                                                    class="wrap-info-input"
+                                                    type="text"
+                                                />
+                                            </div>
+                                            <div class="wrap-info-user">
                                                 <lable class="wrap-info-label">Tên đăng nhập:</lable>
                                                 <input
                                                     id="tenDangNhap"
-                                                    value="Giavi1302"
+                                                    value=""
                                                     disabled
                                                     class="wrap-info-input"
                                                     type="text"
@@ -98,22 +108,13 @@
                                                 <lable class="wrap-info-label">Email:</lable>
                                                 <input
                                                     id="emailUser"
-                                                    value="nguyenhoanggiavi123@gmail.com"
+                                                    value=""
                                                     disabled
                                                     class="wrap-info-input"
                                                     type="text"
                                                 />
                                             </div>
-                                            <div class="wrap-info-user">
-                                                <lable class="wrap-info-label">Mật khẩu:</lable>
-                                                <input
-                                                    id="matKhau"
-                                                    value="Giavi@1302"
-                                                    disabled
-                                                    class="wrap-info-input"
-                                                    type="text"
-                                                />
-                                            </div>
+                                            
                                         </div>
                                         <button class="Log-out-btn">Đăng xuất</button>
                                     </div>
@@ -187,7 +188,7 @@
                             </tr>
                             <tr class="cart-table-column text-highline">
                                 <td>Total:</td>
-                                <td class="num-totals">334</td>
+                                <td class="num-totals totals">334</td>
                             </tr>
                         </table>
                         <button class="order-cart-btn">Check Out</button>
@@ -204,28 +205,83 @@
         </div>
 
         <!-- Modal -->
-        <div class="modal-signUp">
-            <div class="modal-container">
+        <div class="modal-signUp ">
+            <div class="modal-container-login ">
                 <img src="../assets/img/commerce-img-modal.jpg" alt="" class="modal__background" />
                 <div class="modal-content">
                     <button class="modal__close">
-                        <i class="fa-solid fa-xmark"></i>
+                        <svg width="30px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
                     </button>
-                    <form action="" method="post" class="form" id="register-form">
-                        <h3 class="form__heading">Sign Up</h3>
+                    <form action="" method="post" class="form" id="login-form">
+                        <h3 class="form__heading">Login</h3>
                         <p class="form__desc">Register for a convenient shopping experience.</p>
-
                         <div class="form__group">
-                            <label for="fullname" class="form__label">Username</label>
+                            <label for="username" class="form__label">Username</label>
                             <input
                                 type="text"
-                                id="fullname"
-                                name="fullname"
+                                id="l_username"
+                                name="username"
                                 rules="required"
-                                placeholder="Javvix_1302"
+                                placeholder="Enter your username"
                                 class="form__control"
                             />
-                            <span class="form__message"></span>
+                            <span class="form__message username"></span>
+                        </div>
+                        <div class="form__group">
+                            <label for="password" class="form__label">Password</label>
+                            <input
+                                type="password"
+                                id="l_password"
+                                name="password"
+                                rules="required|min:6"
+                                placeholder="Enter your password"
+                                class="form__control"
+                            />
+                            <span class="form__message password"></span>
+                        </div>     
+                        <button class="form__submit disabled">Login</button>
+                        <div class="form__remembe-acc">
+                            <input type="checkbox" name="" id="" />
+                            <p>Remember Me</p>
+                        </div>
+                    </form>
+                    <div class="modal__footer">
+                        <p>Don't you have an account? <button href="#">Sign up Kitchen</button></p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-container-signUp close">
+                <div class="modal-content-signUp ">
+                    <button class="modal__close">
+                        <svg width="30px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+                    </button>
+                    <form action="" method="post" class="form" id="register-form">
+                        <h3 class="form__heading">Sign up</h3>
+                        <p class="form__desc">Register for a convenient shopping experience.</p>
+                        <div class="form__group">
+                            <label for="fullName" class="form__label">Fullname</label>
+                            <input
+                                type="text"
+                                id="fullName"
+                                name="fullName"
+                                rules="required"
+                                placeholder="Enter your fullName"
+                                class="form__control"
+                            />
+                            <span class="form__message fullName"></span>
+                        </div>
+
+                        <div class="form__group">
+                            <label for="userName" class="form__label">UserName</label>
+                            <input
+                                type="text"
+                                id="userName"
+                                name="userName"
+                                rules="required"
+                                placeholder="Enter your userName"
+                                class="form__control"
+                            />
+                            <span class="form__message userName"></span>
                         </div>
 
                         <div class="form__group">
@@ -234,11 +290,11 @@
                                 type="email"
                                 id="email"
                                 name="email"
-                                rules="required|email"
-                                placeholder="Javvix@gmail.com"
+                                rules="required"
+                                placeholder="Enter your email"
                                 class="form__control"
                             />
-                            <span class="form__message"></span>
+                            <span class="form__message email"></span>
                         </div>
 
                         <div class="form__group">
@@ -251,19 +307,25 @@
                                 placeholder="Enter your password"
                                 class="form__control"
                             />
-                            <span class="form__message"></span>
-                        </div>
+                            <span class="form__message password"></span>
+                        </div>     
 
-                        <button class="form__submit">Sign Up</button>
-
-                        <div class="form__remembe-acc">
-                            <input type="checkbox" name="" id="" />
-                            <p>Remember Me</p>
-                        </div>
+                        <div class="form__group">
+                            <label for="confirmPassword" class="form__label">Confirm Password</label>
+                            <input
+                                type="password"
+                                id="confirmPassword"
+                                name="confirmPassword"
+                                rules="required|min:6"
+                                placeholder="Enter your confirmPassword"
+                                class="form__control"
+                            />
+                            <span class="form__message confirmPassword"></span>
+                        </div> 
+                        <button class="form__submit-register disabled">Sign Up</button>
                     </form>
-
                     <div class="modal__footer">
-                        <p>Do you already have an account? <a href="">Login Kitchen</a></p>
+                        <p>Do you have an account? <button href="#">Login Kitchen</button></p>
                     </div>
                 </div>
             </div>

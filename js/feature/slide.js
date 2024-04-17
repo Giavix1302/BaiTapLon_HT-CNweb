@@ -9,7 +9,7 @@ setTimeout(() => {
     for(let i = 0; i < featureItemBtns.length; i++) {
         featureItemBtns.get(i).addEventListener('click', (e) => {
             const id = e.target.dataset.id;
-            window.location.href = `./product.html?id=${id}`
+            window.location.href = `./html/product.html?id=${id}`
         })
     }
 },1)
@@ -34,7 +34,7 @@ featuredList.innerHTML = listFeatured.map((item, slideIndex) => {
         position = 'last';
     }
     return `<div class="feature-item ${position}" data-id=${id}>
-        <img src="${img}" alt="" class="feature-item_img">
+        <img src="${img.slice(1)}" alt="" class="feature-item_img">
         <div class="feature-item_info">
             <h3 class="feature-item_title">${name}</h3>
             <ul class="feature-item_list-desc">

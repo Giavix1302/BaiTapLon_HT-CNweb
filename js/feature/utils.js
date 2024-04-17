@@ -1,4 +1,5 @@
 import data from "../data/data.js";
+import { dataAccounts } from "../accounts/dataAccounts.js";
 const fomatPrice = (price) => {
     let formattedPrice = new Intl.NumberFormat('vi-VN', {
         style: 'currency',
@@ -48,8 +49,20 @@ const findProduct = (id) => {
     return products
 }
 
+const findUser = (id) => {
+    return dataAccounts.find(user => user.id == id)
+}
 
-export { fomatPrice, handleRate, getStorageItem, setStorageItem, findProduct, handleDesc }
+
+export { 
+    fomatPrice, 
+    handleRate, 
+    getStorageItem, 
+    setStorageItem, 
+    findProduct, 
+    handleDesc,
+    findUser
+}
 
 
             

@@ -26,7 +26,7 @@ data.map((item) => {
 categoryListDOM.innerHTML = categoryList.map(({ category, img }) => {
     return `<li class="h-category-item col-xl-4 col-lg-4 col-md-6 col-md-6">
         <div class="wrap_img_h3">
-            <img src="${img}" alt="" class="h-category_img">
+            <img src="${img.slice(1)}" alt="" class="h-category_img">
             <h3 class="h-category_info_name">${category}</h3>
         </div>
     </li>`

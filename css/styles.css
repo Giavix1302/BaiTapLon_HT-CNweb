@@ -229,7 +229,11 @@ tbody tr td {
     align-items: center;
 }
 
-.modal-container {
+.modal-container-login.close {
+    display: none;
+}
+
+.modal-container-login {
     width: 1000px;
     height: 650px;
     background-color: #fff;
@@ -237,6 +241,7 @@ tbody tr td {
     overflow: hidden;
     display: flex;
 }
+
 
 .modal-content {
     display: flex;
@@ -250,6 +255,7 @@ tbody tr td {
     border: none;
     background-color: transparent;
     font-size: 40px;
+    margin-left: auto;
 }
 
 .modal__close:hover {
@@ -319,6 +325,7 @@ tbody tr td {
     font-size: 12px;
 }
 
+.form__submit-register,
 .form__submit {
     width: 100%;
     color: #333;
@@ -332,6 +339,15 @@ tbody tr td {
     transition: all 0.2s;
 }
 
+.form__submit-register.disabled:hover,
+.form__submit.disabled:hover {
+    cursor: default !important;
+    color: #333;
+    border: 2px solid #333;
+    background-color: #FFF;
+}
+
+.form__submit-register:hover,
 .form__submit:hover {
     cursor: pointer;
     color: #fff;
@@ -368,10 +384,31 @@ tbody tr td {
     font-weight: 500;
 }
 
-.modal__footer a {
+.modal__footer button {
     font-size: 16px;
     font-weight: 500;
     color: #51a5de;
+    border: none;
+    background-color: transparent;
+}
+
+/* sign up */
+.modal-container-signUp.close {
+    display: none;
+}
+
+.modal-container-signUp {
+    width: 550px;
+    height: 800px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.modal-content-signUp {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 /* products */
@@ -640,6 +677,15 @@ tbody tr td {
     color: #444;
     line-height: 1.4;
     margin-top: 16px;
+}
+
+.about-introduce-desc li {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.about-introduce-desc span {
+    font-weight: 400;
 }
 
 .about-introduce-btn {
